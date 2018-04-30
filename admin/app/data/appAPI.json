@@ -1,0 +1,44 @@
+{
+  "API": {
+    "facebook": {
+      "apiKey": "777apiKey25",
+      "url": "url"
+    },
+    "twitter": {
+      "apiKey": "777apiKey2556",
+      "url": ""
+    },
+    "linkedin": {
+      "apiKey": "1234",
+      "url": ""
+    },
+    "google": {
+      "apiKey": "",
+      "url": ""
+    },
+    "googleAnalytics": {
+      "apiKey": "",
+      "url": ""
+    },
+    "github": {
+      "apiKey": "",
+      "url": ""
+    },
+    "flickr": {
+      "apiKey": "",
+      "url": ""
+    },
+    "pintrest": {
+      "apiKey": "",
+      "url": "working"
+    },
+    "test": {
+      "apiKey": "hgjhkvgjg",
+      "url": "yjgfjkfgjkg"
+    },
+    "neewtitle": {
+      "apiKey": "43534534",
+      "url": "cxgdfgdgd"
+    }
+  }
+}

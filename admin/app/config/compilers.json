@@ -1,0 +1,15 @@
+{
+  "stylus":{
+    "admin":"./dev/admin/stylus",
+    "app":"./dev/app/stylus",
+    "ext":"styl"
+  },
+  "less":{
+    "admin":"./dev/admin/less",
+    "app":"./dev/app/less",
+    "ext":"less",
+    "config":{
+
+    }
+  }
+}

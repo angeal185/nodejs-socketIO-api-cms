@@ -1,0 +1,151 @@
+{% extends 'layout.njk' %}
+{% block content %}
+  <div class="w90">
+    <div class="row">
+      <div class="col-md-6 inputData">
+          <div class="card">
+            <div class="card-title">
+              <h3>Meta</h3>
+            </div>
+
+            <div id="sortContainer" class="card-body"></div>
+            <div id="cardTitle" class="card-body"></div>
+            <div class="card-footer"></div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div id="MD"></div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+{%block scripts%}
+  {{macro.js(s="highlight.pack")}}
+  <script>
+    var MD = ace.edit("MD"),
+      postEditorsObj = [
+        {
+          "id": MD,
+          "type": "json",
+          "key2": "k"
+        }
+      ];
+  </script>
+  {{macro.js(s="functions")}}
+  <script>
+
+
+
+    initMeta()
+    initEditor()
+    getData();
+    disableBtn('#updateMeta');
+
+    function initMeta(){
+      var enableMetaBtn = _.once(enableMeta);
+      var container = document.getElementById("sortContainer");
+      var sort = Sortable.create(container, {
+        animation: 150,
+        handle: ".sort",
+        draggable: ".sort",
+        onUpdate: function (evt){
+           var item = evt.item;
+         },
+         onSort: function (evt) {
+           var c = _.clone(entries);
+           var ttl = $('#cardTitle').children('input').val();
+           var b = {
+             "meata": c,
+             "title": buildTitle(ttl)
+           }
+           $('#updateMeta').unbind();
+           udMeta(c,b);
+           console.log(c)
+       },
+      });
+      _.forIn(config.metaBtns, function (i, e) {
+        $('.card-footer').append(btnTpl({"id": e, "title": i}))
+      })
+    }
+
+    function disableBtn(i) {
+      $(i).attr('disabled', 'true');
+    }
+
+    function enableMeta() {
+      $('#updateMeta').removeAttr('disabled')
+    }
+    function buildTitle(i){
+      return '<title>'+i+'</title>'
+    }
+    function bindMeta() {
+      $('.inputValue').keyup(_.debounce(bindMetaKey, 500));
+      $('#cardTitle').children('input').keyup(_.debounce(bindMetaKey, 500));
+    }
+
+    function udMeta(x,y){
+      $('.inputValue').each(function () {
+        x.push(this.value.replace(/"/g, "'"))
+        MD.setValue(JSON.stringify(y, 0, 2));
+      });
+      $('#updateMeta').click(function (event) {
+
+        var toSend = {"meta":x,"title":buildTitle($('#cardTitle').children('input').val())}
+        console.log(toSend)
+        socket.emit('setMeta',toSend)
+      });
+    }
+
+    function deleteInput(){
+      $('.deleteInput').unbind();
+
+      $('.deleteInput').click(function() {
+        $('*#updateMeta').unbind();
+        $(this).next('input').remove() && $(this).remove();
+        var c = _.clone(entries);
+        let ttl = $('#cardTitle').children('input').val();
+        var b = {
+          "meata": c,
+          "title": buildTitle(ttl)
+        }
+        udMeta(c,b)
+      });
+    }
+
+    function addNewInput() {
+      $('#newInput').click(function (event) {
+        $('#sortContainer').append(inputTpl({"val": ""}));
+        $('.inputValue').unbind();
+        bindMeta();
+        deleteInput();
+      });
+    }
+
+    function bindMetaKey() {
+      enableMetaBtn();
+      $('#updateMeta').unbind();
+      var a = _.clone(entries);
+      let ttl = $('#cardTitle').children('input').val();
+      var b = {
+        "meata": a,
+        "title": buildTitle(ttl)
+      }
+      udMeta(a,b)
+    }
+
+    function getData() {
+      socket.addEventListener("getMeta", function (data) {
+        _.forEach(data.meta, function (i) {
+          $('#sortContainer').append(inputTpl({"val": i}))
+        })
+        $('#cardTitle').append(inputBareTpl({"val":data.siteTitle.slice(7,-8)}))
+        bindMeta();
+        deleteInput();
+      });
+      socket.emit('getMeta')
+      MDSettingsInit("json");
+      addNewInput();
+    }
+  </script>
+{% endblock %}

@@ -1,0 +1,29 @@
+<h3>Preview<button type="button" id="previewBtn" class="settingsBtn">settings</button></h3>
+<div id="previewDiv"></div>
+<div id="previewMenu">
+  <div class="row"></div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <label class="switch red">Markdown</label>
+    <label class="switch">Pug</label>
+    <div class="markdwn">
+      <textarea id="editor"></textarea>
+      <div class="row">
+        {{macro.colBtn(a="3",i="editorSettings",e="Settings")}}
+      </div>
+    </div>
+    <div class="pug">
+      <textarea id="PUG"></textarea>
+      <div class="row">
+        {{macro.colBtn(a="3",i="PUGSettings",e="Settings")}}
+        {{macro.colBtn(a="3",i="PUGCommit",e="Commit")}}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <label>HTML</label>
+    <textarea id="MD"></textarea>
+    <div id="ctrl" class="row"></div>
+  </div>
+</div>

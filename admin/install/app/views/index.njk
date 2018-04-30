@@ -1,0 +1,29 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="container-fluid">
+  <h1 class="text-center">{{title|startCase}}</h1>
+  <div class="row">
+
+
+    <div class="col-md-4 test">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="text-center">Compiler</h3>
+        </div>
+        <div class="card-body">
+          {% for i in config.compilers %}
+          <button type="button" class="btn btn-primary btn-block Compiler">{{i}}</button>
+          {% endfor %}
+          <input type="text" id="compiler" class="form-control text-center mt-4" value="stylus">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 test">
+      <pre id="confPre"></pre>
+    </div>
+
+
+  </div>
+
+</div>
+{% endblock %}

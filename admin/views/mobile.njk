@@ -1,0 +1,92 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<style>
+.window {
+  position: relative;
+  display: block;
+  width: 360px;
+  height: 567px;
+  margin: 100px auto 0;
+  box-shadow: 0 0 65px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 3px;
+  background: #F1F1F1;
+}
+</style>
+<div class="w90 row">
+  <div class="col-md-4">
+    <div class="row text-center mobOps">
+      <div class="col-md-6">
+        <label>width</label>
+        <input type="text" id="mobWidth" class="form-control mb-4">
+      </div>
+      <div class="col-md-6">
+        <label>height</label>
+        <input type="text" id="mobHeight" class="form-control mb-4">
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-8">
+    <div class="window">
+      <div class="nvHeader">
+        <div class="burger-container">
+          <div id="burger">
+            <div class="bar topBar"></div>
+            <div class="bar btmBar"></div>
+          </div>
+        </div>
+        <div class="icon icon-apple"></div>
+        <ul class="menu">
+          <li class="nvMenuItem"><a href="#">Mac</a></li>
+          <li class="nvMenuItem"><a href="#">iPad</a></li>
+          <li class="nvMenuItem"><a href="#">iPhone</a></li>
+          <li class="nvMenuItem"><a href="#">Watch</a></li>
+          <li class="nvMenuItem"><a href="#">TV</a></li>
+          <li class="nvMenuItem"><a href="#">Music</a></li>
+          <li class="nvMenuItem"><a href="#">Support</a></li>
+        </ul>
+        <div class="shop icon icon-bag"></div>
+      </div>
+      <div class="content"> <img src="https://images.apple.com/v/ipad-air-2/c/images/overview/performance_large.png" alt=""/>
+        <h2>Thin. Light. Epic.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas recusandae ullam repellat, soluta, reprehenderit suscipit reiciendis minus ratione alias dolor eveniet rerum.</p><img src="https://images.apple.com/v/ipad-air-2/c/images/overview/design_large.png" alt=""/>
+        <p> Consectetur adipisicing elit. Est earum dicta officiis ratione qui non perspiciatis necessitatibus laborum culpa ad. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste explicabo laborum non vel, aperiam, nemo esse harum officiis, temporibus quae, delectus dolorem laboriosam eligendi exercitationem aliquam eveniet autem facilis? Iure pariatur iusto ipsum aut, accusantium rerum. Ipsum officiis voluptatibus assumenda placeat obcaecati. Voluptas explicabo optio repellendus minima sunt, ducimus suscipit, labore ratione eum officia molestias!</p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quidem magnam aut corporis voluptate! Et similique iste, molestiae illo nemo adipisci molestias, iure accusantium, sit expedita fugiat aliquam dolore! Odit perferendis, earum quaerat inventore ut error placeat sunt dignissimos dicta.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
+{%block scripts%}
+{{macro.js(s="functions")}}
+<script>
+const mobData = {{mobData|dump}};
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        nvHeader = document.querySelector('.nvHeader');
+
+    burger.onclick = function() {
+        nvHeader.classList.toggle('menu-opened');
+    }
+}());
+
+
+_.forEach(['width','height'],function(i){
+  $('#mob'+_.capitalize(i)).keyup(function(){
+    $('.window ').css(i,this.value+'px');
+  });
+})
+
+_.forEach(mobData,function(i,e){
+  $('.mobOps').append('<button type="button" id="mob'+e+'" class="btn btn-primary btn-block shrink">'+i.title+'</button>');
+  $('#mob'+e).click(function(event) {
+    $('.window ').css({'width':i.width+'px','height':i.height+'px'});
+  });
+})
+
+
+</script>
+{% endblock %}

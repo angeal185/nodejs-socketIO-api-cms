@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");module.exports=function(r,a){return utils.assertColor(r),r=r.rgba,a=a||new nodes.RGBA(255,255,255,1),utils.assertColor(a),a=a.rgba,new nodes.RGBA(r.r*r.a+a.r*(1-r.a),r.g*r.a+a.g*(1-r.a),r.b*r.a+a.b*(1-r.a),r.a+a.a-r.a*a.a)};

@@ -1,0 +1,11 @@
+{
+  "postTemplates": [{
+      "title": "template1",
+      "entry": "<div>test template</div>"
+    },
+    {
+      "title": "template2",
+      "entry": "<div>test template 2</div>"
+    }
+  ]
+}

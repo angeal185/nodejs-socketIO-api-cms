@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");module.exports=function(e,n,t){utils.assertString(e,"pattern"),utils.assertString(n,"replacement"),utils.assertString(t,"val"),e=new RegExp(e.string,"g");var r=t.string.replace(e,n.string);return t instanceof nodes.Ident?new nodes.Ident(r):new nodes.String(r)};

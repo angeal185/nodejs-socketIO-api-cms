@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes"),Image=require("./image");module.exports=function(e,n){utils.assertType(e,"string","img");try{var e=new Image(this,e.string)}catch(e){if(n)return[new nodes.Unit(0),new nodes.Unit(0)];throw e}e.open();var r=e.size();e.close();var s=[];return s.push(new nodes.Unit(r[0],"px")),s.push(new nodes.Unit(r[1],"px")),s};

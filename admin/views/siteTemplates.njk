@@ -1,0 +1,14 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90">
+  <h1>{{title|capitalize}}</h1>
+  <div class="btn-group mb20 sortBy" role="group"></div>
+  <div class="row galleryDiv"></div>
+</div>
+{% endblock %}
+{%block scripts%}
+{{macro.js(s="functions")}}
+<script>
+galleryInit();
+</script>
+{% endblock %}

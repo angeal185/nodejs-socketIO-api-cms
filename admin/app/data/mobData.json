@@ -1,0 +1,125 @@
+[{
+  "title": "iPhone X",
+  "width": 375,
+  "height": 812
+}, {
+  "title": "iPhone 8 Plus",
+  "width": 414,
+  "height": 736
+}, {
+  "title": "iPhone 8",
+  "width": 375,
+  "height": 667
+}, {
+  "title": "iPhone 7 Plus",
+  "width": 414,
+  "height": 736
+}, {
+  "title": "iPhone 7",
+  "width": 375,
+  "height": 667
+}, {
+  "title": "iPhone 6 Plus/6S Plus",
+  "width": 414,
+  "height": 736
+}, {
+  "title": "iPhone 6/6S",
+  "width": 375,
+  "height": 667
+}, {
+  "title": "iPHone 5",
+  "width": 320,
+  "height": 568
+}, {
+  "title": "iPad Pro",
+  "width": 1024,
+  "height": 1366
+}, {
+  "title": "iPad Third &amp; Fourth Generation",
+  "width": 768,
+  "height": 1024
+}, {
+  "title": "iPad Air 1 &amp; 2",
+  "width": 768,
+  "height": 1024
+}, {
+  "title": "iPad Mini",
+  "width": 768,
+  "height": 1024
+}, {
+  "title": "iPad Mini 2 &amp; 3",
+  "width": 768,
+  "height": 1024
+}, {
+  "title": "Nexus 6P",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Nexus 5X",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Google Pixel",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Google Pixel XL",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Google Pixel 2",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Google Pixel 2 XL",
+  "width": 411,
+  "height": 731
+}, {
+  "title": "Samsung Galaxy Note 5",
+  "width": 480,
+  "height": 853
+}, {
+  "title": "LG G5",
+  "width": 480,
+  "height": 853
+}, {
+  "title": "One Plus 3",
+  "width": 480,
+  "height": 853
+}, {
+  "title": "Samsung Galaxy S9",
+  "width": 360,
+  "height": 740
+}, {
+  "title": "Samsung Galaxy S9+",
+  "width": 360,
+  "height": 740
+}, {
+  "title": "Samsung Galaxy S8",
+  "width": 360,
+  "height": 740
+}, {
+  "title": "Samsung Galaxy S8+",
+  "width": 360,
+  "height": 740
+}, {
+  "title": "Samsung Galaxy S7",
+  "width": 360,
+  "height": 640
+}, {
+  "title": "Samsung Galaxy S7 Edge",
+  "width": 360,
+  "height": 640
+}, {
+  "title": "Nexus 7 (2013)",
+  "width": 600,
+  "height": 960
+}, {
+  "title": "Nexus 9",
+  "width": 768,
+  "height": 1024
+}, {
+  "title": "Samsung Galaxy Tab 10",
+  "width": 800,
+  "height": 1280
+}]

@@ -1,0 +1,1 @@
+var utils=require("../utils");module.exports=function(r,t,s){utils.assertColor(r,"color"),utils.assertString(t,"prop"),utils.assertType(s,"unit","amount");var e=r.hsla.clone();if(!(t={hue:"h",saturation:"s",lightness:"l"}[t.string]))throw new Error("invalid adjustment property");var i=s.val;return"%"==s.type&&(i="l"==t&&i>0?(100-e[t])*i/100:e[t]*(i/100)),e[t]+=i,e.rgba};

@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");module.exports=function(e,t){return utils.assertType(e,"unit","unit"),t?(utils.assertString(t,"type"),new nodes.Unit(e.val,t.string)):e.type||""};

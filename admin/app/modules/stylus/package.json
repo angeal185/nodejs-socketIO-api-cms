@@ -1,0 +1,12 @@
+{
+  "name": "stylus",
+  "version": "0.54.5",
+  "main": "./index.js",
+  "browserify": "./lib/browserify.js",
+  "engines": {
+    "node": "*"
+  },
+  "bin": {
+    "stylus": "./bin/stylus"
+  }
+}

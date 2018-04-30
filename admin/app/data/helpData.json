@@ -1,0 +1,11 @@
+{
+  "links": {
+    "outLink": "website",
+    "mobileLink": "mobile app"
+  },
+  "consoles": {
+    "console": "the command console",
+    "socket": "socket related data and messages",
+    "logs": "all logging related to the CMS"
+  }
+}

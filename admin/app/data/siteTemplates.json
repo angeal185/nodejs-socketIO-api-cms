@@ -1,0 +1,60 @@
+{
+    "lang":"en",
+    "meta": [
+        "<meta charset='utf-8'>",
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+    ],
+    "favicon":"<link rel='shortcut icon' href='app/img/favicon.png'>",
+    "siteTitle": "<title>gsite titleohjgvhb</title>",
+    "styles":[
+      "app/css/font-awesome",
+      "app/css/bootstrap",
+      "app/css/styles",
+      "app/css/shared"
+    ],
+    "scripts":[
+      "app/js/jquery.min",
+      "app/js/lodash.min",
+      "app/js/bootstrap.min",
+      "app/js/templates.min",
+      "app/js/shared.min",
+      "app/js/functions.min"
+    ],
+    "jsonLd": {
+      "@context": "http://www.schema.org",
+      "@type": "AnimalShelter",
+      "name": "",
+      "url": "",
+      "logo": "",
+      "image": "",
+      "description": "",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "postOfficeBoxNumber": "",
+        "addressLocality": "",
+        "addressRegion": "",
+        "postalCode": "",
+        "addressCountry": ""
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "",
+        "telephone": ""
+      }
+    },
+    "templates": [
+        {
+            "title": "navTpl",
+            "entry": "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\"><span class=\"navbar-brand\">Ajax blog</span><button class=\"navbar-toggler\" type=\"button\"><span class=\"navbar-toggler-icon\"></span></button><div class=\"collapse navbar-collapse\" id=\"navbarResponsive\"><ul id=\"navLinks\" class=\"navbar-nav ml-auto\"></ul></div></nav>"
+        },
+        {
+            "title": "navDetails",
+            "entry": "<div class=\"nav-top\"><div class=\"nav-details\"><a href=\"{{url}}\" target=\"_blank\">{{info}}</a></div><div class=\"icn-group\"></div></div>"
+        },
+        {
+            "entry": "<div class=\"nav-top\"><div class=\"nav-details\"><a href=\"{{url}}\"target=\"_blank\">{{info}}</a></div><div class=\"icn-group\"></div></div>",
+            "title": "xcvbdfbvfb"
+        }
+    ]
+}

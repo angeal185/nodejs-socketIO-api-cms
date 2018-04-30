@@ -1,0 +1,1 @@
+var Node=require("./node"),Keyword=function(e){this.value=e};Keyword.prototype=new Node,Keyword.prototype.type="Keyword",Keyword.prototype.genCSS=function(e,o){if("%"===this.value)throw{type:"Syntax",message:"Invalid % without number"};o.add(this.value)},Keyword.True=new Keyword("true"),Keyword.False=new Keyword("false"),module.exports=Keyword;

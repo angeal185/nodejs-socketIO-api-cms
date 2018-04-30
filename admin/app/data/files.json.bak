@@ -1,0 +1,68 @@
+{
+  "filter": {
+    "admin": {
+      "css": [],
+      "js": [
+        "markdown",
+        "marked",
+        "src-min-noconflict"
+      ]
+    }
+  },
+  "app": {
+    "data": [
+      "data.json",
+      "gallery.json",
+      "home.json",
+      "posts.json",
+      "posts.json.bak"
+    ],
+    "css": [
+      "animate.css",
+      "shared.css",
+      "styles.css",
+      "dark.css"
+    ],
+    "js": [
+      "functions.js",
+      "shared.js",
+      "templates.js"
+    ]
+  },
+  "admin": {
+    "css": [
+      "atom-one-dark.css",
+      "chosen.css",
+      "styles.css",
+      "appDemo.css"
+    ],
+    "js": [
+      "admin.js",
+      "functions.js",
+      "settings.js",
+      "tpl.js"
+    ],
+    "data": [
+      "config.json"
+    ]
+  },
+  "compiler": {
+    "admin": [
+      "atom-one-dark",
+      "chosen",
+      "styles",
+      "appDemo"
+    ],
+    "app": [
+      "animate",
+      "shared",
+      "styles",
+      "dark"
+    ]
+  },
+  "gulp": [
+    "config.json",
+    "minImg.js",
+    "gulpfile.js"
+  ]
+}

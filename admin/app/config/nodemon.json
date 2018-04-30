@@ -1,0 +1,22 @@
+{
+  "delay": 1000,
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "admin/public/data/"
+  ],
+  "watch": [
+  	"admin/",
+    "app/",
+    "dev/app/js/app.min.js"
+  ],
+  "stdin": true,
+  "runOnChangeOnly": false,
+  "verbose": false,
+  "signal": "SIGUSR2",
+  "stdout": true,
+  "watchOptions": {
+  },
+  "ext": "js, json, html, css, njk"
+}

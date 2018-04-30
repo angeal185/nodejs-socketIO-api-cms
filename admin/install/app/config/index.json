@@ -1,0 +1,42 @@
+{
+  "app":{
+    "port":3000,
+    "styles": ["css/bootstrap.min.css","css/install.css"],
+    "scripts": ["js/jquery.min.js","/socket.io/socket.io.js","js/install.js"],
+    "compilers":["stylus","less","none"]
+  },
+  "installCmd": {
+    "bower": "bower install",
+    "npm": "npm i"
+  },
+  "installMsg": {
+    "tasks": {
+      "install": {},
+      "copy": {
+        "name": "copy file",
+        "fail": "failed to copy to destination ",
+        "success": "copied to destination "
+      }
+    }
+  },
+  "toCopy": [{
+    "name": "lodash.min.js",
+    "src": "./node_modules/lodash/",
+    "dest": "./app/app/js/"
+  }, {
+    "name": "bootstrap.min.js",
+    "src": "./bower_components/bootstrap/dist/js/",
+    "dest": "./app/app/js/"
+  }, {
+    "name": "bootstrap.min.css",
+    "src": "./bower_components/bootstrap/dist/css/",
+    "dest": "./app/app/css/"
+  }, {
+    "name": "jquery.min.js",
+    "src": "./bower_components/jquery/dist/",
+    "dest": "./app/app/js/"
+  }],
+  "appMsg":{
+    "loadErr":"Error loading index.html"
+  }
+}

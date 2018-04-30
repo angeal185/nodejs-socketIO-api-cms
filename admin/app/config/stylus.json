@@ -1,0 +1,20 @@
+{
+  "compare": false,
+  "compress": false,
+  "convertCSS": false,
+  "linenos": false,
+  "prefix": "",
+  "print": false,
+  "firebug": false,
+  "sourcemap": false,
+  "files": [],
+  "paths": [],
+  "plugins": [],
+  "urlFunction": false,
+  "includeCSS": false,
+  "imports": [],
+  "resolveURL": false,
+  "disableCache": false,
+  "deps": false,
+  "hoist": false
+}

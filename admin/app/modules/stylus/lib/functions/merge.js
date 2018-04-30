@@ -1,0 +1,1 @@
+var utils=require("../utils");(module.exports=function(t){utils.assertPresent(t,"dest"),t=utils.unwrap(t).first,utils.assertType(t,"object","dest");for(var s=utils.unwrap(arguments[arguments.length-1]).first,r=!0===s.val,e=1,u=arguments.length-r;e<u;++e)utils.merge(t.vals,utils.unwrap(arguments[e]).first.vals,r);return t}).raw=!0;

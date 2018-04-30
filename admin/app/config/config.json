@@ -1,0 +1,264 @@
+{
+  "app": {
+    "port": 3000,
+    "name":"CMS",
+    "version":"1.0.0",
+    "updateUrl":"/data/test.json",
+    "uploads": "./admin/public/uploads",
+    "exportTo": "./dist/",
+    "debugToolbar": false,
+    "console":true,
+    "osNotify":true,
+    "help": true,
+    "watch":true,
+    "compiler":"stylus",
+    "compilerExt":"styl",
+    "logging": {
+      "console": true,
+      "consoleLimit": 30,
+      "file": {
+        "enabled": true,
+        "replace": false,
+        "timeType": "hour",
+        "fileLimit": 80
+      }
+    },
+    "minifyOutput": false,
+    "preview": "/front",
+    "mobile": "/mobile",
+    "favicon": "/admin/public/img/icon.png",
+    "lang": "en",
+    "node": {
+      "npm": "5.6.0",
+      "nodemon": "1.11.0",
+      "node": "v8.9.4"
+    }
+  },
+  "socketIO":{
+    "debug":true,
+    "reconnectionAttempts":3,
+    "msgs":{
+      "online":"socketIO online",
+      "dissconnect":"Connection error",
+      "reconnectA":"Attempting to reconnect...",
+      "reconnectF":"socketIO reconnect error"
+    }
+  },
+  "tasks":{
+    "cleanDirs":true,
+    "deleteDirs":false,
+    "minJson":false,
+    "minJs":false
+  },
+  "nav": {
+    "site": [
+      "meta",
+      "schema",
+      "links",
+      "scripts",
+      "pages",
+      "templates"
+    ],
+    "posts": [
+      "posts",
+      "create post",
+      "templates"
+    ],
+    "gallery": [
+      "gallery",
+      "preload"
+    ],
+    "social": [
+      "api",
+      "links"
+    ],
+    "settings": [
+      "settings",
+      "editor",
+      "tasks",
+      "status"
+    ]
+  },
+  "postCreate": {
+    "inputData": [
+      "id",
+      "author",
+      "title",
+      "subTitle",
+      "img",
+      "subImg",
+      "category",
+      "tags"
+    ],
+    "input": [
+      "title",
+      "subTitle",
+      "category",
+      "author",
+      "img",
+      "subImg"
+    ],
+    "templates": [
+      "title"
+    ],
+    "siteTemplates": [
+      "title",
+      "description"
+    ],
+    "msg": "Loading elements..."
+  },
+  "previewInput": [
+    {
+      "id": "Height",
+      "value": "400px"
+    },
+    {
+      "id": "FontSize",
+      "value": "1rem"
+    },
+    {
+      "id": "Background",
+      "value": "fff"
+    },
+    {
+      "id": "Color",
+      "value": "212121"
+    }
+  ],
+  "postAlertMsg": [
+    {
+      "id": "#author",
+      "msg": "enter author name"
+    },
+    {
+      "id": "#title",
+      "msg": "enter a title"
+    },
+    {
+      "id": "#subTitle",
+      "msg": "enter a short description"
+    },
+    {
+      "id": "#category",
+      "msg": "enter a category"
+    },
+    {
+      "id": "#tags",
+      "msg": "enter tags seperated by a comma"
+    },
+    {
+      "id": "#img",
+      "msg": "enter main post image url"
+    },
+    {
+      "id": "#subImg",
+      "msg": "enter preview post image url"
+    }
+  ],
+  "createPostBtn": {
+    "MDSettings": "Settings",
+    "beautify": "Beautify",
+    "getTplData": "Templates",
+    "updateMD": "Stage changes",
+    "commit": "commit"
+  },
+  "editorInput": {
+    "title": "titleInput",
+    "type": "dirInput",
+    "mode": "fileModeInput",
+    "dir": "dirFullInput"
+  },
+  "editorBtn": {
+    "MDSettings": "Settings",
+    "beautify": "Beautify",
+    "minify": "minify",
+    "delete": "delete",
+    "commit": "commit"
+  },
+  "metaBtns": {
+    "newInput": "New",
+    "MDSettings": "Settings",
+    "updateMeta": "Commit"
+  },
+  "editPostBtn": {
+    "MDSettings": "Settings",
+    "toPUG": "To Pug",
+    "toMARK": "To Markdown",
+    "beautify": "Beautify",
+    "getTplData": "Templates",
+    "updateMD": "Stage changes",
+    "commit": "commit"
+  },
+  "globes": {
+    "globeA": "SocketIO offline",
+    "globeB": "testing globe B",
+    "globeC": "Offline mode. unable to check for latest version"
+  },
+  "schema": {
+    "main": {
+      "name": "name",
+      "url": "url",
+      "logo": "logo",
+      "image": "image",
+      "description": "description"
+    },
+    "address": {
+      "streetAddress": "streetAddress",
+      "postOfficeBoxNumber": "postOfficeBoxNumber",
+      "addressLocality": "addressLocality",
+      "addressRegion": "addressRegion",
+      "postalCode": "postalCode",
+      "addressCountry": "addressCountry"
+    },
+    "contact": {
+      "contactType": "contactType",
+      "telephone": "telephone"
+    },
+    "schemaBtns": {
+      "rmvAddress": "Remove address",
+      "rmvContact": "Remove contact",
+      "updateSchema": "Commit"
+    }
+  },
+  "styleShared": [
+    "bootstrap",
+    "font-awesome",
+    "shared"
+  ],
+  "styleDefault": [
+    "atom-one-dark",
+    "styles"
+  ],
+  "scriptsShared": [
+    "jquery",
+    "lodash"
+  ],
+  "scriptsDefault": [
+    "tpl",
+    "sortable",
+    "highlight.pack",
+    "admin"
+  ],
+  "scriptsIo": [
+    "/js/src-min-noconflict/ace",
+    "/siofu/client",
+    "/socket.io/socket.io"
+  ],
+  "toMerge":[
+    "jquery.min.js",
+    "lodash.min.js",
+    "bootstrap.min.js",
+    "templates.min.js",
+    "shared.min.js",
+    "functions.min.js"
+  ],
+  "watch":{
+    "tasks":{
+      "adminCss":["./dev/admin/css/","./admin/public/css/","css","admin"],
+      "adminJs":["./dev/admin/js/","./admin/public/js/","js","admin"],
+      "appCss":["./dev/app/css/","./app/app/css/","css","app"],
+      "appJs":["./dev/app/js/","./app/app/js/","js","app"]
+    }
+
+  }
+}

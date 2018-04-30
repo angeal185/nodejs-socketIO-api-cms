@@ -1,0 +1,10 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90">
+  <h1 class="center">{{title}}</h1>
+</div>
+{% endblock %}
+{%block scripts%}
+{{macro.js(s="functions")}}
+<script>initAPI()</script>
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90">
+  <h1>{{title|startCase}}</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row inputData"></div>
+      <div class="alert-div"></div>
+    </div>
+    <div class="col-md-4">
+      {{macro.preJSON()}}
+    </div>
+  </div>
+  {% if (edit)or(create) %}
+    {% include "includes/post.njk" %}
+  {% elif (templates)or(siteTemplates) %}
+    {% include "includes/templates.njk" %}
+  {% endif %}
+</div>
+{{macro.tplMenu()}}
+{% endblock %}
+{%block scripts%}
+{% if (edit) or (create) %}
+{{macro.js(s="markdown")}}
+{% if (edit) %}
+{{macro.js(s="to-markdown")}}
+{% endif %}
+{% endif %}
+{{macro.js(s="highlight.pack")}}
+<script>
+{% if (edit) %}
+  const data = {{data|dump}};
+{% endif %}
+</script>
+{{macro.js(s="functions")}}
+<script>
+var MD = ace.edit("MD"),
+{% if (edit) or (create) %}
+editor = ace.edit("editor"),
+PUG = ace.edit("PUG"),
+postEditorsObj = [{
+  "id":editor,
+  "type":"markdown",
+  "key2":"i"
+},{
+  "id":MD,
+  "type":"html",
+  "key2":"k"
+},{
+  "id":PUG,
+  "type":"jade",
+  "key2":"m"
+}];
+{% elif (templates) or (siteTemplates) %}
+postEditorsObj = [{
+  "id":MD,
+  "type":"html",
+  "key2":"k"
+}];
+{% endif %}
+{% if (edit) %}
+  var arr = [];
+  initEditPostInput();
+  initEditor();
+  editorListeners();
+  initPreview();
+  editorSwitch()
+  editorEvents();
+  getTplData();
+  postAlert();
+  initEditPost();
+  toPUG();
+  toMARK();
+  beautifyHTML();
+
+{% elif (create) %}
+  createInputs(config.postCreate.inputData);
+  initEditor();
+  bindCreateInput();
+  getPostsData();
+  editorListeners();
+  bindCreateInput();
+  getTplData();
+  initPreview();
+  editorSwitch()
+  editorEvents();
+  tagsInit();
+  postAlert();
+  commitNewPost('postCommit');
+
+{% elif (templates) %}
+createInputs(config.postCreate.templates);
+initEditor();
+initPreview();
+minHtml()
+mdEvents();
+bindTpl()
+beautifyHTML();
+getTplData("getTplData","deleteTplData");
+commitNewPost('templateCommit');
+
+{% elif (siteTemplates) %}
+console.log('siteTemplates')
+createInputs(config.postCreate.templates);
+initEditor();
+initPreview();
+minHtml()
+mdEvents();
+bindTpl()
+beautifyHTML();
+getTplData("getSiteTplData","deleteSiteTplData");
+commitNewPost('siteTemplateCommit');
+{% endif %}
+commitEnable();
+socket.addEventListener("success", function (i) {
+  showtoast('Done');
+  console.log(i)
+});
+</script>
+{% endblock %}

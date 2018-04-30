@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes"),hsla=require("./hsla");module.exports=function(e,r,s){return 1==arguments.length?(utils.assertColor(e,"color"),e.hsla):hsla(e,r,s,new nodes.Unit(1))};

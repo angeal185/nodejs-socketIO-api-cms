@@ -1,0 +1,37 @@
+{
+  "details": {
+    "author": "Ben eaves"
+  },
+  "nav": {
+    "links": ["home", "blog", "gallery"],
+    "details":{
+      "url":"https://www.yoursite.com",
+      "info":"Add info here..."
+    },
+    "social": [{
+      "icon": "facebook",
+      "url": "facebook.com"
+    }, {
+      "icon": "twitter",
+      "url": "twitter.com"
+    }, {
+      "icon": "linkedin",
+      "url": "linkedin.com"
+    }, {
+      "icon": "github",
+      "url": "github.com"
+    }]
+  },
+  "blog":{
+    "search": {
+      "header": "Search",
+      "placeholder": "Search..."
+    },
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "years": {
+      "max":"2018",
+      "min":"2017"
+    }
+  }
+
+}

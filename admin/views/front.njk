@@ -1,0 +1,46 @@
+{% import "macros/macros.njk" as macro %}
+<!DOCTYPE html>
+<html lang="{{data.lang}}">
+  <head>
+    {% for i in data.meta %}
+      {{i}}
+    {% endfor %}
+      {{data.siteTitle}}
+      {{data.favicon}}
+    {% for i in data.styles %}
+        {{macro.cssT(s=i)}}
+    {% endfor %}
+    {{macro.css(s="appDemo")}}
+    <style id="dark"></style>
+    <style>
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+
+    {% for i in data.scripts %}
+        {{macro.jsT(s=i)}}
+    {% endfor %}
+    {% for i in config.scriptsIo %}
+      {{macro.jsT(s=i)}}
+    {% endfor %}
+    {{macro.js(s='frontDemo')}}
+<script>
+$(document).ready(function() {
+
+
+});
+
+
+
+
+</script>
+
+  </body>
+</html>

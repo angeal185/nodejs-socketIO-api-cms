@@ -1,0 +1,1 @@
+var nodes=require("../nodes"),hsla=require("./hsla"),component=require("./component");module.exports=function(e,n){if(n){var o=e.hsla;return hsla(n,new nodes.Unit(o.s),new nodes.Unit(o.l),new nodes.Unit(o.a))}return component(e,new nodes.String("hue"))};

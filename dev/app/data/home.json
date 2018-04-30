@@ -1,0 +1,44 @@
+{
+  "header":"home",
+  "carousel": [{
+    "url": "app/img/poly-19.png",
+    "title": "title1",
+    "sub": "sub1"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title2",
+    "sub": "sub2"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title3",
+    "sub": "sub3"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title4",
+    "sub": "sub4"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title5",
+    "sub": "sub5"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title6",
+    "sub": "sub6"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title7",
+    "sub": "sub7"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title8",
+    "sub": "sub8"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title9",
+    "sub": "sub9"
+  }, {
+    "url": "app/img/poly-19.png",
+    "title": "title10",
+    "sub": "sub10"
+  }]
+}

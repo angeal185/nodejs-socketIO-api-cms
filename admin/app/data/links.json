@@ -1,0 +1,40 @@
+{
+    "links": {
+        "facebook": {
+            "icon": "345icon222",
+            "url": "url"
+        },
+        "twitter": {
+            "icon": "",
+            "url": ""
+        },
+        "linkedin": {
+            "icon": "",
+            "url": ""
+        },
+        "google": {
+            "icon": "",
+            "url": ""
+        },
+        "googleAnalytics": {
+            "icon": "",
+            "url": ""
+        },
+        "github": {
+            "icon": "",
+            "url": ""
+        },
+        "flickr": {
+            "icon": "",
+            "url": ""
+        },
+        "pintrest": {
+            "icon": "",
+            "url": "working"
+        },
+        "test": {
+            "icon": "hgjhkvgjg",
+            "url": "yjgfjkfgjkg"
+        }
+    }
+}

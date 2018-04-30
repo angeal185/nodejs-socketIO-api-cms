@@ -1,0 +1,16 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90">
+  <h1>{{title|capitalize}}</h1>
+  <h5>Sort by: <span id="sortByLbl">Id</span></h5>
+  <div class="btn-group mb20 sortBy" role="group"></div>
+  <div class="row postsDiv"></div>
+</div>
+<form id="toSubmit" class="hidden" action="/posts/editPost" method="post">
+<textarea id="postData" name="postData"></textarea>
+</form>
+{% endblock %}
+{%block scripts%}
+{{macro.js(s="functions")}}
+<script>initPosts()</script>
+{% endblock %}

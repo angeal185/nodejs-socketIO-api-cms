@@ -1,0 +1,65 @@
+{
+  "jsonLd": [{
+    "title": "Name",
+    "id": "name"
+  }, {
+    "title": "URL",
+    "id": "url"
+  }, {
+    "title": "Logo URL",
+    "id": "logo"
+  }, {
+    "title": "Image",
+    "id": "image"
+  }, {
+    "title": "Description",
+    "id": "description"
+  }, {
+    "title": "Address",
+    "id": "streetAddress"
+  }, {
+    "title": "PO Box",
+    "id": "postOfficeBoxNumber"
+  }, {
+    "title": "City",
+    "id": "addressLocality"
+  }, {
+    "title": "State/Region",
+    "id": "addressRegion"
+  }, {
+    "title": "Zip/Postal Code",
+    "id": "postalCode"
+  }, {
+    "title": "Country",
+    "id": "addressCountry"
+  }, {
+    "title": "Contact Type",
+    "id": "contactType"
+  }, {
+    "title": "Telephone",
+    "id": "telephone"
+  }],
+  "tpl": {
+    "@context": "http://www.schema.org",
+    "@type": "AnimalShelter",
+    "name": "",
+    "url": "",
+    "logo": "",
+    "image": "",
+    "description": "",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "postOfficeBoxNumber": "",
+      "addressLocality": "",
+      "addressRegion": "",
+      "postalCode": "",
+      "addressCountry": ""
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "",
+      "telephone": ""
+    }
+  }
+}

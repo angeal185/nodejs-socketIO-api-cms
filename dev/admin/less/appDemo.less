@@ -1,0 +1,64 @@
+.demoToggle {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.79);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.5;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
+
+.demoConfig {
+    width: 220px;
+    position: fixed;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.79);
+    color: white;
+    top: 90px;
+    left: -220px;
+    padding: 20px;
+    box-shadow: 0 0 10px black;
+    overflow:hidden;
+
+}
+
+.demoConfig,.demoToggle{
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  z-index: 999;
+}
+
+.demoConfig.active,.demoToggle.active {
+  -webkit-transform: translate(220px, 0);
+  -moz-transform: translate(220px, 0);
+  -o-transform: translate(220px, 0);
+  -ms-transform: translate(220px, 0);
+  transform: translate(220px, 0);
+}
+
+
+.btn-dark {
+    background: rgba(0, 0, 0, 0.34);
+    color: white;
+    border: none;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+.btn-dark:hover {
+    background: rgba(0, 0, 0, 0.84);
+    color: white;
+    border: none;
+    box-shadow: 0 0 2px black;
+}

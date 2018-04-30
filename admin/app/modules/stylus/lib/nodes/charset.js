@@ -1,0 +1,1 @@
+var Node=require("./node"),Charset=module.exports=function(t){Node.call(this),this.val=t};Charset.prototype.__proto__=Node.prototype,Charset.prototype.toString=function(){return"@charset "+this.val},Charset.prototype.toJSON=function(){return{__type:"Charset",val:this.val,lineno:this.lineno,column:this.column,filename:this.filename}};

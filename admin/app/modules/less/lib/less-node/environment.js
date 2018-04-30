@@ -1,0 +1,1 @@
+module.exports={encodeBase64:function(e){return new Buffer(e).toString("base64")},mimeLookup:function(e){return require("mime").lookup(e)},charsetLookup:function(e){return require("mime").charsets.lookup(e)},getSourceMapGenerator:function(){return require("source-map").SourceMapGenerator}};

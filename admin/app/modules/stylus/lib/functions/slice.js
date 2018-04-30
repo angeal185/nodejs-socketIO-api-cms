@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");(module.exports=function(e,n,s){if(n=n&&n.nodes[0].val,s=s&&s.nodes[0].val,e=utils.unwrap(e).nodes,e.length>1)return utils.coerce(e.slice(n,s),!0);var r=e[0].string.slice(n,s);return e[0]instanceof nodes.Ident?new nodes.Ident(r):new nodes.String(r)}).raw=!0;

@@ -1,0 +1,1 @@
+var utils=require("../utils");module.exports=function(i,t){utils.assertString(i,"prefix"),utils.assertType(t,"block","block");var s=this.prefix;return this.options.prefix=this.prefix=i.string,t=this.visit(t),this.options.prefix=this.prefix=s,t};

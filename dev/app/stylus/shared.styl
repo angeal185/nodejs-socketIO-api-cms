@@ -1,0 +1,59 @@
+.w90
+  width: 90%
+  margin-left: 5%
+
+.toast
+  padding: 10px 15px
+  color: #fff
+  background: rgba(0, 0, 10, .7)
+  display: inline-block
+  position: fixed
+  bottom: -100px
+  right: 40px
+  opacity: 0
+  transition: all .4s ease-out
+  box-shadow: 0 0 20px black
+  z-index: 999999
+
+.shrink
+  -webkit-transform: perspective(1px) translateZ(0)
+  transform: perspective(1px) translateZ(0)
+  -webkit-transition-duration: .3s
+  transition-duration: .3s
+  -webkit-transition-property: transform
+  transition-property: transform
+
+.shrink:active,
+.shrink:focus,
+.shrink:hover
+  -webkit-transform: scale(.98)
+  transform: scale(.98)
+
+::-webkit-scrollbar
+  z-index: 30
+  width: 10px
+
+::-webkit-scrollbar-track
+  background-color: #181a1d
+
+::-webkit-scrollbar-thumb
+  background-color: #2b2e33
+
+#toTop
+  height: 50px
+  width: 50px
+  font-size: 22px
+  position: fixed
+  bottom: 50px
+  right: 50px
+  border-radius: 50%
+  background: rgba(52, 58, 64, 0.8)
+  box-shadow: 0 0 14px black
+  z-index: 99
+  text-align: center
+  line-height: 1.9
+  display: none
+
+#toTop:hover
+  box-shadow: 0 0 8px black
+

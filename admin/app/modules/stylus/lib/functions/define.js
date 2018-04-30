@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");module.exports=function(e,r,s){utils.assertType(e,"string","name"),r=utils.unwrap(r);var n=this.currentScope;s&&s.toBoolean().isTrue&&(n=this.global.scope);var t=new nodes.Ident(e.val,r);return n.add(t),nodes.null};

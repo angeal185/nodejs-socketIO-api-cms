@@ -1,0 +1,1 @@
+var nodes=require("../nodes"),hsla=require("./hsla"),component=require("./component");module.exports=function(n,e){if(e){var o=n.hsla;return hsla(new nodes.Unit(o.h),e,new nodes.Unit(o.l),new nodes.Unit(o.a))}return component(n,new nodes.String("saturation"))};

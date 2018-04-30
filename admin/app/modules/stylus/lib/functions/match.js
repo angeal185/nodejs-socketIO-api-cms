@@ -1,0 +1,1 @@
+function validateFlags(t){return!!(t=t&&t.string)&&t.split("").every(function(t){return~VALID_FLAGS.indexOf(t)})}var utils=require("../utils"),nodes=require("../nodes"),VALID_FLAGS="igm";module.exports=function(t,e,r){utils.assertType(t,"string","pattern"),utils.assertString(e,"val");var i=new RegExp(t.val,validateFlags(r)?r.string:"");return e.string.match(i)};

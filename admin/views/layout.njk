@@ -1,0 +1,108 @@
+{% import "macros/macros.njk" as macro %}
+<!DOCTYPE html>
+<html lang="{{config.app.lang}}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{macro.favicon(i=config.app.favicon)}}
+    <title>{{title}}</title>
+    {% for i in config.styleShared %}
+      {{macro.cssShared(s=i)}}
+    {% endfor %}
+    {% for i in config.styleDefault %}
+      {{macro.css(s=i)}}
+    {% endfor %}
+    {% if (title === 'mobile') %}
+      {{macro.css(s='mobile')}}
+    {% endif %}
+    {% block styles %}{% endblock %}
+  </head>
+  <body>
+    <div id="loaderMask">
+
+    </div>
+    {% include "includes/menu.njk" %}
+    <div class="main">
+      <div class="mask bubbles"></div>
+      {% include "includes/head.njk" %}
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include "includes/bottomNav.njk" %}
+    {{macro.toTop()}}
+    {{macro.js(s='loader')}}
+    {% for i in config.scriptsShared %}
+      {{macro.jsShared(s=i)}}
+    {% endfor %}
+    {% for i in config.scriptsDefault %}
+      {{macro.js(s=i)}}
+    {% endfor %}
+    {% for i in config.scriptsIo %}
+      {{macro.jsT(s=i)}}
+    {% endfor %}
+    {{macro.jsShared(s="shared")}}
+    <script>
+
+
+    const config = {{config|dump}};</script>
+      {%block scripts%}{% endblock %}
+    <script type="text/javascript">
+      showtoast('loading');
+      {% if (editor !== true) %}
+        initNav();
+      {% endif %}
+      scrollTop();
+      otherFadeIn('.outLink','.outText','Preview website');
+      otherFadeIn('.mobileLink','.outText','Preview Mobile')
+      initGlobes();
+      initBottomNav()
+      goGlobes();
+
+
+
+    if (config.app.help){
+      socket.addEventListener("helpData", function (data) {
+        $('.main').append(helpTpl());
+        _.forIn(data.links,function(i,e){
+          $('.'+e).hover(function() {
+            $('#helpDiv').fadeIn('fast');
+            helpDiv('preview '+i,'click here to preview the '+i);
+          }, function() {
+            $('#helpDiv').fadeOut('slow');
+          });
+        })
+
+        _.forIn(data.consoles,function(i,e){
+          $('#'+e+'Btn').hover(function() {
+            $('#helpDiv').fadeIn('fast');
+            helpDiv(e,'click here to view '+i);
+          }, function() {
+            $('#helpDiv').fadeOut('slow');
+          });
+        })
+
+        console.log(data)
+      })
+      socket.emit("helpData")
+
+
+
+    }
+
+      socket.addEventListener("reloadAdmin", function (data) {
+        location.reload();
+      })
+
+
+
+      $(window).on('load',function(){
+          $('#loaderMask').fadeOut('slow',function() {
+            stopLoader();
+            $(this).remove();
+          });
+
+      });
+
+    </script>
+  </body>
+</html>

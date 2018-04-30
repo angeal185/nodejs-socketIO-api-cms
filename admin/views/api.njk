@@ -1,0 +1,45 @@
+{% extends 'layout.njk' %}
+{% block content %}
+<div class="w90">
+  <h1>{{title|startCase}}</h1>
+  <div class="row APIData"></div>
+  <div class="row APIBtns">
+    {{macro.colBtn(a="6",i="APINew",e="New")}}
+    {{macro.colBtn(a="6",i="APIUpdate",e="Update")}}
+  </div>
+</div>
+{% endblock %}
+{%block scripts%}
+<script>
+var status =
+{% if (api) %}
+'api';
+{% elif (links) %}
+'links';
+{% elif (gallery) %}
+'gallery';
+{% elif (preload) %}
+'preload';
+{% endif %}
+</script>
+{{macro.js(s="settings")}}
+{{macro.js(s="functions")}}
+<script>
+{% if (api) %}
+  initApi("getAPI")
+  apiEvents(apiTpl());
+{% elif (links) %}
+  initApi("getLinks")
+  apiEvents(apiTpl());
+{% elif (gallery) or (preload) %}
+  var evnts = apiEvents(galleryTpl({ 'title': 'new','name':'TITLE','apiKey': '','url':'' }));
+  {% if (gallery) %}
+    initGallery("getGallery");
+    evnts;
+  {% elif (preload) %}
+    initGallery("getPreload");
+    evnts;
+  {% endif %}
+{% endif -%}
+</script>
+{% endblock %}

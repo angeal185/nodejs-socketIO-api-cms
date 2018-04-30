@@ -1,0 +1,21 @@
+{
+  "host": "smtp.live.com",
+  "port": {
+    "insecure": 25,
+    "secure": 465
+  },
+  "secure": false,
+  "auth": {
+      "type": "hotmail",
+      "clientId": "clientid",
+      "clientSecret": "clientsecret",
+      "refreshToken": "refreshtoken",
+      "accessToken": "accesstoken",
+      "user": "username",
+      "pass": "password;",
+      "expires": 12345
+    },
+    "from": "'ben eaves' <beneaves01@hotmail.com>",
+    "useSubscribers": true,
+    "subscribersList": ["beneaves01@hotmail.com", "beneaves03@hotmail.com"]
+}

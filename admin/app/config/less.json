@@ -1,0 +1,19 @@
+{
+  "silent": false,
+  "verbose": false,
+  "depends": false,
+  "compress": false,
+  "lint": false,
+  "paths": [],
+  "color": true,
+  "strictImports": false,
+  "insecure": false,
+  "rootpath": "",
+  "relativeUrls": false,
+  "ieCompat": true,
+  "strictMath": false,
+  "strictUnits": false,
+  "globalVars": null,
+  "modifyVars": null,
+  "urlArgs": ""
+}

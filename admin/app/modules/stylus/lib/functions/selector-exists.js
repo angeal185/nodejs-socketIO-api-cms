@@ -1,0 +1,1 @@
+var utils=require("../utils");module.exports=function(r){if(utils.assertString(r,"selector"),!this.__selectorsMap__){var t=require("../visitor/normalizer"),s=new t(this.root.clone());s.visit(s.root),this.__selectorsMap__=s.map}return r.string in this.__selectorsMap__};

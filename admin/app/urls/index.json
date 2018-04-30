@@ -1,0 +1,21 @@
+{
+  "nodemon":"./admin/app/modules/nodemon",
+  "config": "./admin/app/config/config",
+  "files": "./admin/app/data/files",
+  "posts": "./admin/app/data/posts.json",
+  "appAPI": "./admin/app/data/appAPI.json",
+  "versions": "./admin/app/urls/versions.json",
+  "templates": "./admin/app/data/templates.json",
+  "siteTemplates": "./admin/app/data/siteTemplates.json",
+  "gallery": "./admin/app/data/gallery.json",
+  "links": "./admin/app/data/links.json",
+  "preload": "./admin/app/data/preload.json",
+  "logs":"./admin/app/logs/logs.json",
+  "utils": "./admin/app/utils/utils",
+  "session":"./admin/app/data/session",
+  "socketIO":"./admin/app/bin/socketIO",
+  "devAppCss":"./dev/app/css/",
+  "devAdminCss":"./dev/admin/css/",
+  "installConf":"./install/app/config",
+  "installUtils":"./install/app/utils"
+}

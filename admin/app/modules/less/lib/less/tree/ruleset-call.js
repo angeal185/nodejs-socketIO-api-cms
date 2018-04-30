@@ -1,0 +1,1 @@
+var Node=require("./node"),Variable=require("./variable"),RulesetCall=function(e){this.variable=e,this.allowRoot=!0};RulesetCall.prototype=new Node,RulesetCall.prototype.type="RulesetCall",RulesetCall.prototype.eval=function(e){return new Variable(this.variable).eval(e).callEval(e)},module.exports=RulesetCall;

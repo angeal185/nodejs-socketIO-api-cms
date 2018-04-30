@@ -1,0 +1,10 @@
+{% extends 'layout.njk' %}
+{% block content %}
+{{macro.mainFrame(i="galleryDiv")}}
+{% endblock %}
+{%block scripts%}
+{{macro.js(s="functions")}}
+<script>
+galleryInit();
+</script>
+{% endblock %}

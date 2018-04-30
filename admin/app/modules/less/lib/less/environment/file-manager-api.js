@@ -1,0 +1,1 @@
+module.exports={getPath:function(n){},tryAppendLessExtension:function(n){},alwaysMakePathsAbsolute:function(){},isPathAbsolute:function(n){},join:function(n,t){},pathDiff:function(n,t){},supportsSync:function(n,t,o,i){},supports:function(n,t,o,i){},loadFile:function(n,t,o,i){},loadFileSync:function(n,t,o,i){}};

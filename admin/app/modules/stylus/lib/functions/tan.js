@@ -1,0 +1,1 @@
+var utils=require("../utils"),nodes=require("../nodes");module.exports=function(t){utils.assertType(t,"unit","angle");var e=t.val;"deg"===t.type&&(e*=Math.PI/180);var n=Math.pow(10,9),r=Math.round(Math.sin(e)*n)/n,a=Math.round(Math.cos(e)*n)/n,u=Math.round(n*r/a)/n;return new nodes.Unit(u,"")};

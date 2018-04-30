@@ -1,0 +1,26 @@
+{% extends 'layout.njk' %}
+{% block content %}
+  <div class="w90">
+    <h1 class="center">{{title}}</h1>
+
+    <h3 class="text-center">node_modules tasks</h3>
+    <div id="nodeModules" class="row"></div>
+
+
+    </div>
+  {% endblock %}
+  {%block scripts%}
+    {{macro.js(s="functions")}}
+    <script>
+
+    _.forIn(config.tasks,function(i,e){
+      $('#nodeModules').append(taskCardTpl({"task":e}))
+      if (i){
+        $('#'+e+'Status').removeClass('red').addClass('nGreen').html('complete');
+      }
+    })
+
+
+
+    </script>
+  {% endblock %}

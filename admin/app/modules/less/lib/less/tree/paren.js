@@ -1,0 +1,1 @@
+var Node=require("./node"),Paren=function(e){this.value=e};Paren.prototype=new Node,Paren.prototype.type="Paren",Paren.prototype.genCSS=function(e,n){n.add("("),this.value.genCSS(e,n),n.add(")")},Paren.prototype.eval=function(e){return new Paren(this.value.eval(e))},module.exports=Paren;

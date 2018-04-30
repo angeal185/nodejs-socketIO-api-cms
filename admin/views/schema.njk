@@ -1,0 +1,45 @@
+
+{% extends 'layout.njk' %}
+{% block content %}
+  <div class="w90">
+    <div class="row">
+      <div class="col-md-6 inputData">
+          <div class="card">
+            <div class="card-title">
+              <h3>{{title}}</h3>
+            </div>
+            <div class="card-body"></div>
+            <div class="card-footer"></div>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div id="MD"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{%block scripts%}
+  <script>
+  const schema = {{schema|dump}};
+
+    var MD = ace.edit("MD"),
+      postEditorsObj = [
+        {
+          "id": MD,
+          "type": "json",
+          "key2": "k"
+        }
+      ];
+  </script>
+  {{macro.js(s="functions")}}
+  <script>
+  var first = config.schema.main,
+  second = config.schema.address,
+  third = config.schema.contact;
+  MD.setOptions({"readOnly":true,"useWorker":false,"highlightActiveLine":false,"highlightSelectedWord":false,"highlightGutterLine":false})
+  buildShema();
+  initEditor();
+  MDSettingsInit("html");
+  disableBtn('#updateSchema');
+</script>
+{% endblock %}
