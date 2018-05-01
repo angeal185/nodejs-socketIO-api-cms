@@ -57,7 +57,7 @@ function decryptData(){
   input.pipe(decipher).pipe(output);
 }
 
-decryptData()
+//decryptData()
 
 
 exports.backup = function(i,e,x){

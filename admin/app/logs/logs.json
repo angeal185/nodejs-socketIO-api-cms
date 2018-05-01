@@ -114079,6 +114079,590 @@
             "status": "304",
             "size": null,
             "resTime": "2.181ms"
+        },
+        {
+            "time": "15:01:55",
+            "method": "GET",
+            "url": "/front",
+            "status": "304",
+            "size": null,
+            "resTime": "69.416ms"
+        },
+        {
+            "time": "15:01:56",
+            "method": "GET",
+            "url": "/app/css/font-awesome.min.css",
+            "status": "200",
+            "size": "26.25KB",
+            "resTime": "7.741ms"
+        },
+        {
+            "time": "15:01:56",
+            "method": "GET",
+            "url": "/app/js/templates.min.js",
+            "status": "200",
+            "size": "4.02KB",
+            "resTime": "309.376ms"
+        },
+        {
+            "time": "15:01:56",
+            "method": "GET",
+            "url": "/app/js/jquery.min.js",
+            "status": "200",
+            "size": "84.89KB",
+            "resTime": "303.378ms"
+        },
+        {
+            "time": "15:01:57",
+            "method": "GET",
+            "url": "/app/js/lodash.min.js",
+            "status": "200",
+            "size": "70.07KB",
+            "resTime": "306.167ms"
+        },
+        {
+            "time": "15:01:57",
+            "method": "GET",
+            "url": "/app/js/bootstrap.min.js",
+            "status": "200",
+            "size": "65.95KB",
+            "resTime": "309.154ms"
+        },
+        {
+            "time": "15:01:57",
+            "method": "GET",
+            "url": "/app/css/shared.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "1013.774ms"
+        },
+        {
+            "time": "15:01:57",
+            "method": "GET",
+            "url": "/app/css/bootstrap.min.css",
+            "status": "200",
+            "size": "141.44KB",
+            "resTime": "301.745ms"
+        },
+        {
+            "time": "15:01:57",
+            "method": "GET",
+            "url": "/css/appDemo.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "192.105ms"
+        },
+        {
+            "time": "15:01:58",
+            "method": "GET",
+            "url": "/app/css/styles.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "501.842ms"
+        },
+        {
+            "time": "15:01:58",
+            "method": "GET",
+            "url": "/js/frontDemo.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "246.454ms"
+        },
+        {
+            "time": "15:01:58",
+            "method": "GET",
+            "url": "/app/js/functions.min.js",
+            "status": "200",
+            "size": "8.12KB",
+            "resTime": "501.454ms"
+        },
+        {
+            "time": "15:01:58",
+            "method": "GET",
+            "url": "/app/js/shared.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "222.599ms"
+        },
+        {
+            "time": "15:01:59",
+            "method": "GET",
+            "url": "/js/src-min-noconflict/ace.js",
+            "status": "200",
+            "size": "347.3KB",
+            "resTime": "454.798ms"
+        },
+        {
+            "time": "15:01:59",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "241.024ms"
+        },
+        {
+            "time": "15:01:59",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "7.107ms"
+        },
+        {
+            "time": "15:01:59",
+            "method": "GET",
+            "url": "/app/fonts/fontawesome-webfont.woff2?v=4.5.0",
+            "status": "200",
+            "size": "65.06KB",
+            "resTime": "468.564ms"
+        },
+        {
+            "time": "15:02:00",
+            "method": "GET",
+            "url": "/app/data/home.json",
+            "status": "304",
+            "size": null,
+            "resTime": "225.443ms"
+        },
+        {
+            "time": "15:02:00",
+            "method": "GET",
+            "url": "/app/img/favicon.png",
+            "status": "304",
+            "size": null,
+            "resTime": "230.320ms"
+        },
+        {
+            "time": "15:02:00",
+            "method": "GET",
+            "url": "/app/img/poly-19.png",
+            "status": "200",
+            "size": "665.74KB",
+            "resTime": "10.975ms"
+        },
+        {
+            "time": "15:02:07",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "6.318ms"
+        },
+        {
+            "time": "15:02:07",
+            "method": "GET",
+            "url": "/app/data/posts.json",
+            "status": "200",
+            "size": "12.42KB",
+            "resTime": "2.133ms"
+        },
+        {
+            "time": "15:02:07",
+            "method": "GET",
+            "url": "/app/img/poly-04_3.png",
+            "status": "404",
+            "size": "3.82KB",
+            "resTime": "84.314ms"
+        },
+        {
+            "time": "15:02:08",
+            "method": "GET",
+            "url": "/app/img/750x300.png",
+            "status": "304",
+            "size": null,
+            "resTime": "311.972ms"
+        },
+        {
+            "time": "15:02:12",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "5.563ms"
+        },
+        {
+            "time": "15:02:13",
+            "method": "GET",
+            "url": "/app/data/gallery.json",
+            "status": "304",
+            "size": null,
+            "resTime": "1.791ms"
+        },
+        {
+            "time": "15:02:13",
+            "method": "GET",
+            "url": "/app/img/400x300.png",
+            "status": "404",
+            "size": "3.82KB",
+            "resTime": "77.652ms"
+        },
+        {
+            "time": "15:02:18",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "5.550ms"
+        },
+        {
+            "time": "15:02:18",
+            "method": "GET",
+            "url": "/app/data/posts.json",
+            "status": "304",
+            "size": null,
+            "resTime": "1.790ms"
+        },
+        {
+            "time": "15:02:18",
+            "method": "GET",
+            "url": "/app/img/poly-04_3.png",
+            "status": "404",
+            "size": "3.82KB",
+            "resTime": "60.935ms"
+        },
+        {
+            "time": "15:03:31",
+            "method": "GET",
+            "url": "/front",
+            "status": "304",
+            "size": null,
+            "resTime": "46.175ms"
+        },
+        {
+            "time": "15:03:31",
+            "method": "GET",
+            "url": "/css/appDemo.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "2.925ms"
+        },
+        {
+            "time": "15:03:32",
+            "method": "GET",
+            "url": "/app/css/font-awesome.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "303.375ms"
+        },
+        {
+            "time": "15:03:32",
+            "method": "GET",
+            "url": "/app/css/bootstrap.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "507.617ms"
+        },
+        {
+            "time": "15:03:32",
+            "method": "GET",
+            "url": "/app/css/styles.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "735.947ms"
+        },
+        {
+            "time": "15:03:32",
+            "method": "GET",
+            "url": "/app/css/shared.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "988.700ms"
+        },
+        {
+            "time": "15:03:33",
+            "method": "GET",
+            "url": "/app/js/jquery.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "9.928ms"
+        },
+        {
+            "time": "15:03:33",
+            "method": "GET",
+            "url": "/app/js/templates.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "197.634ms"
+        },
+        {
+            "time": "15:03:33",
+            "method": "GET",
+            "url": "/app/js/lodash.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "477.598ms"
+        },
+        {
+            "time": "15:03:33",
+            "method": "GET",
+            "url": "/app/js/bootstrap.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "665.042ms"
+        },
+        {
+            "time": "15:03:34",
+            "method": "GET",
+            "url": "/app/js/shared.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "942.303ms"
+        },
+        {
+            "time": "15:03:34",
+            "method": "GET",
+            "url": "/app/js/functions.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "1168.310ms"
+        },
+        {
+            "time": "15:03:34",
+            "method": "GET",
+            "url": "/js/src-min-noconflict/ace.js",
+            "status": "304",
+            "size": null,
+            "resTime": "2.519ms"
+        },
+        {
+            "time": "15:03:34",
+            "method": "GET",
+            "url": "/js/frontDemo.min.js",
+            "status": "304",
+            "size": null,
+            "resTime": "197.877ms"
+        },
+        {
+            "time": "15:03:34",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "10.867ms"
+        },
+        {
+            "time": "15:03:35",
+            "method": "GET",
+            "url": "/app/fonts/fontawesome-webfont.woff2?v=4.5.0",
+            "status": "304",
+            "size": null,
+            "resTime": "253.179ms"
+        },
+        {
+            "time": "15:03:35",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "304",
+            "size": null,
+            "resTime": "252.253ms"
+        },
+        {
+            "time": "15:03:35",
+            "method": "GET",
+            "url": "/app/data/home.json",
+            "status": "304",
+            "size": null,
+            "resTime": "2.219ms"
+        },
+        {
+            "time": "15:03:35",
+            "method": "GET",
+            "url": "/app/img/favicon.png",
+            "status": "200",
+            "size": "1.56KB",
+            "resTime": "244.553ms"
+        },
+        {
+            "time": "15:03:36",
+            "method": "GET",
+            "url": "/app/img/poly-19.png",
+            "status": "304",
+            "size": null,
+            "resTime": "1.905ms"
+        },
+        {
+            "time": "15:03:36",
+            "method": "GET",
+            "url": "/app/img/favicon.png",
+            "status": "304",
+            "size": null,
+            "resTime": "194.536ms"
+        },
+        {
+            "time": "15:03:36",
+            "method": "GET",
+            "url": "/css/appDemo.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "1.048ms"
+        },
+        {
+            "time": "15:03:36",
+            "method": "GET",
+            "url": "/app/css/font-awesome.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "229.816ms"
+        },
+        {
+            "time": "15:03:37",
+            "method": "GET",
+            "url": "/app/css/bootstrap.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "427.719ms"
+        },
+        {
+            "time": "15:03:37",
+            "method": "GET",
+            "url": "/app/css/styles.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "716.025ms"
+        },
+        {
+            "time": "15:03:37",
+            "method": "GET",
+            "url": "/app/css/shared.min.css",
+            "status": "304",
+            "size": null,
+            "resTime": "899.770ms"
+        },
+        {
+            "time": "15:03:37",
+            "method": "GET",
+            "url": "/app/js/bootstrap.bundle.min.js.map",
+            "status": "404",
+            "size": "3.82KB",
+            "resTime": "1233.223ms"
+        },
+        {
+            "time": "15:03:43",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "200",
+            "size": "722Bytes",
+            "resTime": "5.587ms"
+        },
+        {
+            "time": "15:03:43",
+            "method": "GET",
+            "url": "/app/data/posts.json",
+            "status": "200",
+            "size": "12.42KB",
+            "resTime": "1.773ms"
+        },
+        {
+            "time": "15:03:43",
+            "method": "GET",
+            "url": "/app/img/750x300.png",
+            "status": "200",
+            "size": "2KB",
+            "resTime": "1.210ms"
+        },
+        {
+            "time": "15:03:43",
+            "method": "GET",
+            "url": "/app/img/poly-04_3.png",
+            "status": "404",
+            "size": "3.82KB",
+            "resTime": "292.284ms"
+        },
+        {
+            "time": "15:06:37",
+            "method": "GET",
+            "url": "/app/img/poly-04_3.png",
+            "status": "200",
+            "size": "48.07KB",
+            "resTime": "9.328ms"
+        },
+        {
+            "time": "15:07:05",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "200",
+            "size": "722Bytes",
+            "resTime": "6.987ms"
+        },
+        {
+            "time": "15:07:06",
+            "method": "GET",
+            "url": "/app/data/gallery.json",
+            "status": "200",
+            "size": "1.1KB",
+            "resTime": "1.611ms"
+        },
+        {
+            "time": "15:07:06",
+            "method": "GET",
+            "url": "/app/img/400x300.png",
+            "status": "200",
+            "size": "46.94KB",
+            "resTime": "1.625ms"
+        },
+        {
+            "time": "15:07:15",
+            "method": "GET",
+            "url": "/app/css/dark.min.css",
+            "status": "200",
+            "size": "604Bytes",
+            "resTime": "6.399ms"
+        },
+        {
+            "time": "15:07:22",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "200",
+            "size": "722Bytes",
+            "resTime": "6.658ms"
+        },
+        {
+            "time": "15:07:22",
+            "method": "GET",
+            "url": "/app/data/home.json",
+            "status": "200",
+            "size": "860Bytes",
+            "resTime": "1.711ms"
+        },
+        {
+            "time": "15:07:23",
+            "method": "GET",
+            "url": "/app/img/poly-19.png",
+            "status": "200",
+            "size": "665.74KB",
+            "resTime": "1.359ms"
+        },
+        {
+            "time": "15:07:30",
+            "method": "GET",
+            "url": "/app/data/data.json",
+            "status": "200",
+            "size": "722Bytes",
+            "resTime": "7.127ms"
+        },
+        {
+            "time": "15:07:30",
+            "method": "GET",
+            "url": "/app/data/posts.json",
+            "status": "200",
+            "size": "12.42KB",
+            "resTime": "2.918ms"
+        },
+        {
+            "time": "15:07:30",
+            "method": "GET",
+            "url": "/app/img/poly-04_3.png",
+            "status": "200",
+            "size": "48.07KB",
+            "resTime": "2.605ms"
+        },
+        {
+            "time": "15:07:31",
+            "method": "GET",
+            "url": "/app/img/750x300.png",
+            "status": "200",
+            "size": "2KB",
+            "resTime": "269.906ms"
         }
     ]
 }
